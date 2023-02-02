@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JAVASCRIPT</title>
+    <style>
+      * {
+        letter-spacing: 1px;
+      }
+    </style>
   </head>
   <body>
+    <!-- 6️⃣ -->
+    <div>
+      <h1>Kilometers to miles</h1>
+     km <input type="number" id="kmsData" />
+      <button id="milesBtn" onclick="convertToMiles()">Convert</button>
+      <h1 id="milesRes"></h1>
+      <hr />
+    </div>
+
+    <!-- 7️⃣ -->
+    <div>
+      <h1>Celcius to Fahrenheit<h1>
+       cel <input type="number" id="celData">
+       <button id="fahBtn" onclick="convertToFahrenheit()">Convert</button>
+       <h1 id="fahRes"></h1>
+       <hr />
+    </div>
+
+    <!-- 8️⃣ -->
+    <div>
+      <h1>positive, negative or zero</h1>
+    <input type="number" id="numData">
+    <button onclick="checkNumber()" >Check</button>
+    <h1 id="res"></h1>
+    <hr />
+    </div>
+
     <script src="script.js"></script>
+    <!-- Script tag is a paired tag, opening and closing are must. -->
   </body>
 </html>
