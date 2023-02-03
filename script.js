@@ -204,4 +204,91 @@ else {
 // checking using ternary operator
 let num2 = 35
 let res = num2 % 2 === 0 ? "EVEN" : "ODD";
-console.log(res);
+// console.log(res);
+
+
+
+
+// 1️⃣1️⃣Check Prime Number
+/* A prime number is a positive integer that is only divisible by 1 and itself. e.g 2,3,5,7,11 etc. 
+In simple words , prime number doesn't come in any table of any number except 1 and itself */
+
+function checkPrime(n) {
+  let result;
+  if (n <= 1) {
+    return "Not prime";
+  } else {
+    for (let i = 2; i < n; i++) {
+      if (n % i === 0) {
+        result = `${n} is not a prime number`;
+        break;
+      }
+      else {
+        result = `${n} is a prime number`;
+      }
+    }
+    return result;
+  }
+
+}
+// console.log(checkPrime(5)); //Prime
+// console.log(checkPrime(15)); //Not Prime
+
+
+
+// 1️⃣2️⃣ Find the largest number between three numbers.
+
+// ➖ using Math.max() method
+
+// It returns the largest number among the provided numbers.
+// e.g
+
+function findLargestUsingMax() {
+  var a = prompt("Enter 1st number : ");
+  var b = prompt("Enter 2nd number : ");
+  var c = prompt("Enter 1st3rd number : ");
+
+  let largest = Math.max(a, b, c);
+  console.log(`${largest} is the largest number`);
+}
+// findLargestUsingMax();
+
+
+// ➖ User defined
+function findLargest() {
+  var a = prompt("Enter 1st number : ");
+  var b = prompt("Enter 2nd number : ");
+  var c = prompt("Enter 1st3rd number : ");
+
+  if (a >= b && a >= c) {
+    console.log(`${a} is the largest number`);
+  }
+  else if (b >= a && b >= c) {
+    console.log(`${b} is the largest number`);
+  }
+  else {
+    console.log(`${c} is the largest number`);
+  }
+}
+
+// findLargest();
+
+
+
+
+// 1️⃣3️⃣ Factorial of a number
+// The factorial of a number is the product of all the numbers from 1 to that number.
+// formula
+// (n!) = 1*2*3*4*5...n
+
+// We have to multiply from 1 to that number
+
+function factorial(n) {
+  let fact = 1; // In fact variable , the result of each step will be stored. And the we are multiplying fact to i.
+  for (let i = 1; i <= n; i++) {
+    fact = fact * i;
+  }
+  return fact;
+}
+
+// console.log(factorial(5));
